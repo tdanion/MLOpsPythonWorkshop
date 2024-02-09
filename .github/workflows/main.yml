@@ -2,7 +2,7 @@ name: Python Continuous Integration
 on:
   push:
     branches: [ "main" ]
-  pull_request:
+  pull_request: 
     branches: [ "main" ]
 
 
@@ -10,13 +10,13 @@ env:
   PNPM_VERSION: 8.5.1
   PYTHON_VERSION: 3.10.13
   NODE_VERSION: 18
-  AZURE_RESOURCE_GROUP_NAME: "azure-ml-yolw"
+  AZURE_RESOURCE_GROUP_NAME: "azure-ml-tdanion"
   AZURE_LOCATION: "northeurope"
-  AZURE_ML_WORKSPACE_NAME: "cats-dogs-yolw"
-  AZURE_WEBAPP_NAME: "cats-dogs-yolw"
+  AZURE_ML_WORKSPACE_NAME: "cats-dogs-tdanion"
+  AZURE_WEBAPP_NAME: "cats-dogs-tdanion"
   DELETE_WEBAPP: "false"
-  DOCKER_API_IMAGE_NAME: "guillaumechervetlunique/mlopspython-api"
-  DOCKER_WEBAPP_IMAGE_NAME: "guillaumechervetlunique/mlopspython-webapp"
+  DOCKER_API_IMAGE_NAME: "tdanion/mlopspython-api"
+  DOCKER_WEBAPP_IMAGE_NAME: "tdanion/mlopspython-webapp"
 
 permissions:
   id-token: write
